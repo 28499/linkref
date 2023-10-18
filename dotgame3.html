@@ -1,0 +1,84 @@
+<!DOCTYPE html>  
+<html lang="">  
+<head>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>The real animal</title>  
+ 
+</head>  
+<body>   
+   
+    <a Href="dotgame2.html"><input onclick="this.value='Stop'" type="button" value="Begin animation" id="start-button"></a>
+
+      <center>  
+        <img id="img" src="https://payload.cargocollective.com/1/10/339592/14075299/RabbitRun_final.gif" width="200" height="200"> 
+    </center>  <br><br><br><br><br><br><br><br><br>
+      <br>  
+      <br>  
+       
+        <tr>
+            <td><input type="button" class = "b" onclick = fun("up") value = "Up"></td> 
+        </tr> 
+      <tr>  
+          <td><input type="button" class = "b" onclick = fun("left") value = "Left"></td>  
+          <td></td>  
+          <td><input type="button" class = "b" onclick = fun("right") value="Right"></td>  
+      </tr>  
+      <tr>   
+           
+          <td><input type="button" class = "b" onclick = fun("down") value = "Down"></td>  
+            
+      </tr>  
+        
+           </center>  
+          <script type="text/javascript">  
+            var a=document.getElementById("img");  
+            a.style.position="relative";  
+            a.style.left="0px";  
+            a.style.top="0px";  
+            a.style.right="0px";  
+            a.style.down="0px";  
+            function fun(b)  
+            {  
+                if(b==="left")  
+                {  
+                      
+                    a.style.left=(parseInt(a.style.left)-10)+"px";  
+                }  
+                if(b==="right")  
+                {  
+                        a.style.left=(parseInt(a.style.left)+10)+"px";  
+                }  
+                if(b==="up")  
+                {  
+                        a.style.top=(parseInt(a.style.top)-10)+"px";  
+                }  
+                if(b==="down")  
+                {  
+                        a.style.top=(parseInt(a.style.top)+10)+"px";  
+                }  
+                if(b=="top-right")  
+                    {  
+                        a.style.left =(parseInt(a.style.left)+10)+"px";  
+                        a.style.top=(parseInt(a.style.top)-10)+"px";  
+                    }  
+                if(b=="top-left")  
+                    {  
+                        a.style.left =(parseInt(a.style.left)-10)+"px";  
+                        a.style.top=(parseInt(a.style.top)-10)+"px";  
+                    }  
+                if(b=="bottom-right")  
+                    {  
+                        a.style.left =(parseInt(a.style.left)+10)+"px";  
+                        a.style.top=(parseInt(a.style.top)+10)+"px";  
+                    }  
+                if(b=="bottom-left")  
+                    {  
+                        a.style.left =(parseInt(a.style.left)-10)+"px";  
+                        a.style.top=(parseInt(a.style.top)+10)+"px";  
+                    }  
+                  
+            }  
+        </script>  
+</body>  
+</html>  
